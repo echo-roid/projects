@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>GET WEATHER</title>
+</head>
+
+<body>
+
+  <style media="screen">
+    section {
+      height: 100vh;
+      background-image: url("image/weather2.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .container {
+      max-width: 1366px;
+      margin: auto;
+      padding: 182px 0 30px 0;
+/*       margin-top:15px */
+
+    }
+
+    .content {
+      width: 50%;
+      text-align: center;
+      border-radius: 10px;
+      padding-bottom: 50px;
+      margin: auto;
+      background-color: rgb(35 27 27 / 75%);
+
+
+
+    }
+
+    .text {
+      padding: 50px;
+      color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    .input {
+      width: 71%;
+      height: 56px;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 20px;
+      outline: none;
+      padding: 0 0 0 20px;
+    }
+
+    .fh-button {
+      width: 80%;
+      margin: 50px 0 0 0;
+      height: 50px;
+      border-radius: 15px;
+      outline: none;
+      background: linear-gradient(to top left, #0033cc 0%, #ff33cc 53%);
+      opacity: 0.5;
+      font: 15px bold;
+    }
+
+    .HOLDER_DTA {
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
+
+    }
+  </style>
+
+
+
+
+
+
+
+  <section>
+
+    <div class="container">
+      <div class="content">
+        <h1 class="text">GET WEATHER</h1>
+        <input type="text" name="" value="" class="input" id="holder_input" placeholder="Enter City Name">
+        <button type="button" name="button" class="fh-button" onclick="getdata()">GET FETCH</button>
+      </div>
+      <div class="HOLDER_DTA">
+        <h1 id="text-data"></h1>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+<script type="text/javascript" src="write.js">
+
+</script>
+
+</html>
